@@ -1,0 +1,99 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>University Sports</title>
+<meta http-equiv="Content-Language" content="English" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link rel="shortcut icon" href="images/favicon1.ico">
+</head>
+
+<body>
+<div id="wrap">
+
+<div id="header">
+
+</div>
+
+<div id="intro"> 
+
+<IMG SRC="images/logo.jpg" ALIGN="right">
+
+<h1>University Sports</h1><br />
+<h2>A site to help manage your sports team</h2>
+
+<div id="footer">
+
+<table width="720">
+<td width="75" align="center"><a href="index.html">Home</A></td>
+<td width="75" align="center"><a href="#">About</A></td>
+<td width="75" align="center"><a href="#">Login</A></td>
+
+</table>
+
+</div>
+
+</div>
+
+<div id="content">
+<div class="left"> 
+
+<h2>Home</h2>
+
+
+
+<div class="articles">
+
+<p>
+University sports is here to help you manage your univeristy sports team.
+</p>
+
+
+
+</div>
+
+</div>
+
+<div class="right"> 
+
+
+<!--<img src="#" border="0" ></a><br />
+-->
+
+<h2>Links</h2>
+
+<a href="http://www.ausa.org.uk/sport">AUSA Sports</a> <br>
+<a href="http://www.aberdeensportsvillage.com/">Aberdeen Sports Village</a> <br>
+<a href="#"></a> <br>
+<a href="#"></a> <!this is a filler space so that all menus are same size!> <BR> 
+
+
+
+
+
+
+</div>
+
+<div style="clear: both;"> </div>
+
+</div>
+
+
+
+
+
+<div id="footer">
+
+<a href="http:www.abdn.ac.uk">Aberdeen University</a> <div id="copyright">Copyright &copy; 2011 Louis Griffiths</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

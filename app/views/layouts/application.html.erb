@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>University Sports | <%= @title %></title>
+    <%= csrf_meta_tag %>
+	<%= render 'layouts/stylesheets' %>
+	<%= javascript_include_tag :application %>
+  </head>
+  <body>
+    <div id="wrap">
+
+<div id="header">
+
+</div>
+
+<div id="intro"> 
+
+
+<%= image_tag("logo.jpg", :alt => "logo", :class => "round", :align => "right") %>
+
+<h1>University Sports</h1><br />
+<h2>A site to help manage your sports team</h2>
+
+<div id="footer">
+
+<table width="720">
+
+<td width="75" align="center"><%= link_to "Home", '/' %></td>
+
+<% if signed_in? %>
+<td width="75" align="center"><%= link_to "Find Club", '#' %></td>
+<td width="75" align="center"><%= link_to "Find User", users_path %></td>
+<td width="75" align="center"><%= link_to "Profile", current_user %></td>
+<% else %>
+<td width="75" align="center"><%= link_to "Sign Up", 'signup' %></td>
+<% end %>
+
+<% if signed_in? %>
+<td width="75" align="center"><%= link_to "Sign out", signout_path, :method => :delete %></td>
+<% else %>
+<td width="75" align="center"><%= link_to "Login", 'signin' %></td>
+<% end %>
+
+</table>
+
+</div>
+
+</div>
+
+<div id="content">
+<div class="left"> 
+
+<h2><%= @title %></h2>
+
+<div class="articles">
+
+      <section class="round">
+        <% flash.each do |key, value| %>
+          <div class="flash <%= key %>"><%= value %></div>
+        <% end %>
+        <%= yield %>
+      </section>
+</div>
+
+</div>
+
+<div class="right"> 
+
+<!--<img src="#" border="0" ></a><br />
+-->
+
+<% if signed_in? %>
+<%= link_to "Settings", edit_user_path(current_user) %>
+<% else %>
+
+<h2>Links</h2>
+
+<a href="http://www.ausa.org.uk/sport">AUSA Sports</a> <br>
+<a href="http://www.aberdeensportsvillage.com/">Aberdeen Sports Village</a> <br>
+<a href="#"></a> <br>
+<a href="#"></a> <!this is a filler space so that all menus are same size!> <BR> 
+<% end %>
+
+</div>
+
+<div style="clear: both;"> </div>
+
+</div>
+
+<div id="footer">
+
+<a href="http://www.abdn.ac.uk">Aberdeen University</a> <div id="copyright">Copyright &copy; 2011 Louis Griffiths</div>
+
+</div>
+      <%= debug(params) if Rails.env.development? %>
+</div>
+</body>
+</html>
+
+
